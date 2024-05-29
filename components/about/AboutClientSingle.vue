@@ -16,7 +16,8 @@ export default {
       :src="client.img"
       :alt="client.title"
       class="
-        w-64
+        h-32
+        w-auto
         py-5
         px-10
         border border-ternary-light

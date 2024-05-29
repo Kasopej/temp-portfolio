@@ -7,7 +7,7 @@ export default {
     };
   },
   computed: {
-    ...mapState(["clientsHeading", "clients"]),
+    ...mapState(["toolsHeading", "tools"]),
   },
 };
 </script>
@@ -24,11 +24,11 @@ export default {
         dark:text-primary-light
       "
     >
-      {{ clientsHeading }}
+      {{ toolsHeading }}
     </p>
-    <div class="grid grid-cols-2 sm:grid-cols-4 mt-10 sm:mt-14 gap-2">
+    <div class="flex flex-wrap mt-10 sm:mt-14 gap-2">
       <AboutClientSingle
-        v-for="client in clients"
+        v-for="client in tools"
         :key="client.id"
         :client="client"
       />

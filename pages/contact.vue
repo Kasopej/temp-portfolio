@@ -8,17 +8,19 @@ export default {
       contacts: [
         {
           id: 1,
-          name: "Your Address, Your City, Your Country",
+          name: "Lagos, Nigeria",
           icon: "map-pin",
         },
         {
           id: 2,
-          name: "email@domain.com",
+          name: "kasopej@gmail.com",
+          link: "mailto:kasopej@gmailcom",
           icon: "mail",
         },
         {
           id: 3,
-          name: "555 8888 888",
+          name: "+234 902 964 6160",
+          link: "tel:+234 902 964 6160",
           icon: "phone",
         },
       ],
@@ -42,9 +44,6 @@ export default {
       md:flex-row md:py-10 md:mt-20
     "
   >
-    <!-- Contact form -->
-    <ContactForm />
-
     <!-- Contact details -->
     <ContactDetails :contacts="contacts" />
   </div>
