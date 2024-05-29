@@ -7,6 +7,7 @@ export const state = () => ({
     {
       id: "260d1271-f1f2-4bc9-a5eb-05a89c8cccdb",
       title: "Goodtalent Hire Talent Management Platform",
+      link: "https://hire.goodtalent.io/",
       category: "Web Application",
       img: "images/hire.png",
       publishDate: "Nov 04, 2021",
@@ -19,7 +20,7 @@ export const state = () => ({
       projectImages: [
         {
           id: uuidv4(),
-          title: "Uber Project Management UI",
+          title: "Goodtalent Hire Talent Management Platform",
           img: "../images/hire.png",
         },
       ],
@@ -44,6 +45,7 @@ export const state = () => ({
     {
       id: "260d1271-f1f2-4bc9-a5eb-05a89c8cccdc",
       title: "Goodtalent Paysurge",
+      link: "https://paysurge.co/",
       category: "Web Application",
       img: "images/paysurge.png",
       publishDate: "Nov 04, 2021",
@@ -81,6 +83,7 @@ export const state = () => ({
     {
       id: "260d1271-f1f2-4bc9-a5eb-05a89c8cdddc",
       title: "Support Sync Pro",
+      link: "https://ui-test.syncpro.africa/",
       category: "Web Application",
       img: "images/syncpro.png",
       publishDate: "Nov 04, 2021",
@@ -113,6 +116,7 @@ export const state = () => ({
     {
       id: "260d1271-f1f2-4bc9-a5eb-05a89c8cccdy",
       title: "Teklabspace Bug Bounty Platform",
+      link: "https://www.teklabspace.com/",
       category: "Web Application",
       img: "images/teklabspace.png",
       publishDate: "Nov 04, 2021",

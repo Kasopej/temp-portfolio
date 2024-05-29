@@ -44,7 +44,7 @@ export default {
         >
           {{ project.title }}
         </p>
-        <div class="flex">
+        <div class="flex gap-4">
           <div class="flex items-center">
             <i
               data-feather="tag"
@@ -59,6 +59,24 @@ export default {
                 dark:text-primary-light
               "
               >{{ project.tag }}</span
+            >
+          </div>
+          <div class="flex items-center">
+            <i
+              data-feather="link"
+              class="w-4 h-4 text-ternary-dark dark:text-ternary-light"
+            ></i>
+            <a
+              class="
+                font-general-medium
+                ml-2
+                leading-none
+                text-primary-dark
+                dark:text-primary-light
+              "
+              :href="project.link"
+              target="_blank"
+              >{{ project.link }}</a
             >
           </div>
         </div>
