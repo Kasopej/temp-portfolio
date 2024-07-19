@@ -1,5 +1,4 @@
 export default {
-  // Target: https://go.nuxtjs.dev/config-target
   target: "static",
   colorMode: {
     classSuffix: "",
@@ -8,6 +7,7 @@ export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: "Kasope's Portfolio",
+    description: "Kasope's Portfolio",
     htmlAttrs: {
       lang: "en",
     },
@@ -16,31 +16,28 @@ export default {
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       { hid: "description", name: "description", content: "" },
       { name: "format-detection", content: "telephone=no" },
+      { name: "og:title", content: "Kasope's Portfolio" },
+      { name: "og:description", content: "Kasope's Portfolio" },
+      { name: "og:url", content: "https://kasope-portfolio.netlify.app/" },
+      {
+        name: "og:image",
+        content: "https://kasope-portfolio.netlify.app/site_screenshot.png",
+      },
+      {
+        name: "twitter:image",
+        content: "https://kasope-portfolio.netlify.app/site_screenshot.png",
+      },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
     link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.png" }],
   },
 
-  // Global CSS: https://go.nuxtjs.dev/config-css
   css: ["~/assets/app.css"],
+  plugins: [],
 
-  // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [
-    // "~/plugins/back-to-top.js"
-  ],
-
-  // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
-
-  // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
-  buildModules: [
-    // https://go.nuxtjs.dev/tailwindcss
-    "@nuxtjs/tailwindcss",
-    "@nuxtjs/color-mode",
-  ],
-
-  // Modules: https://go.nuxtjs.dev/config-modules
+  buildModules: ["@nuxtjs/tailwindcss", "@nuxtjs/color-mode"],
   modules: [],
-
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
 };
