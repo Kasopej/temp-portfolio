@@ -15,31 +15,26 @@ export default {
       { charset: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       { hid: "description", name: "description", content: "" },
-      { name: "format-detection", content: "telephone=no" },
-      { name: "og:title", property: "og:title", content: "Kasope's Portfolio" },
+      // { name: "format-detection", content: "telephone=no" },
+      { property: "og:title", content: "Kasope's Portfolio" },
       {
-        name: "og:description",
         property: "og:description",
         content: "Kasope's Portfolio",
       },
       {
-        name: "og:url",
         property: "og:url",
         content: "https://kasope-portfolio.netlify.app/",
       },
       {
-        name: "og:image",
         property: "og:image",
         content: "https://kasope-portfolio.netlify.app/site_screenshot.png",
       },
       {
         name: "twitter:image",
-        property: "twitter:image",
         content: "https://kasope-portfolio.netlify.app/site_screenshot.png",
       },
       {
         name: "twitter:card",
-        property: "twitter:card",
         content: "summary_large_image",
       },
     ],
