@@ -133,7 +133,7 @@ export const state = () => ({
           img: "../images/teklabspace.png",
         },
       ],
-      technologies: ["JavaScript", "Nuxt.js", "Vuetify"],
+      technologies: ["JavaScript", "React.js"],
       projectDetails: [
         {
           id: uuidv4(),
