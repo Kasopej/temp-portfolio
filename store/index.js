@@ -147,6 +147,16 @@ export const state = () => ({
   tools: [
     {
       id: uuidv4(),
+      title: "Next",
+      img: "../tools/nextjs.jpeg",
+    },
+    {
+      id: uuidv4(),
+      title: "React",
+      img: "../tools/react.jpeg",
+    },
+    {
+      id: uuidv4(),
       title: "Nuxt",
       img: "../tools/nuxt.jpg",
     },
@@ -185,11 +195,11 @@ export const state = () => ({
     {
       id: uuidv4(),
       bio: `I've made fundamental contributions helping businesses generate thousands of Dollars using my skills
-      - Typescript, VueJs,, Nuxt, SCSS, Tailwind, Vite, Vitest, Git etc`,
+      - Typescript, NextJs, React, VueJs, Nuxt, SCSS, Tailwind, Vite, Vitest, Git etc`,
     },
     {
       id: uuidv4(),
-      bio: `I'm extrmemely experienced with taking projects from ideation stage to production, rapidly. This means I'm able to work with a level of ambiguity.`,
+      bio: `I'm have very extensive experience with taking projects from ideation stage to production, rapidly. This means I'm able to work with some level of ambiguity & proactiveness.`,
     },
     {
       id: uuidv4(),
