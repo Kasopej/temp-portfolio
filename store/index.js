@@ -38,7 +38,7 @@ export const state = () => ({
         {
           id: uuidv4(),
           details:
-            "I built the frontend appl for this platform alone 100% in 5 months.This platform boasts features such as real-time chat system - ability for companies to directly chat with applicants or share information with other tema members about candidates, CV parsing for easy update of profiles, wallet & payment integrations for bounty payments, SEO configuration for beautiful social meta & search indexing. It makes it very easy for talents to onboard & start applying to jobs (minimal friction). It is reasonably optimized with a lod time of 5 seconds",
+            "I built the frontend app for this platform in 5 months.This platform boasts features such as real-time chat system - ability for companies to directly chat with applicants or share information with other tema members about candidates, CV parsing for easy update of profiles, wallet & payment integrations for bounty payments, SEO configuration for beautiful social meta & search indexing. It makes it very easy for talents to onboard & start applying to jobs (minimal friction). It is reasonably optimized with a lod time of 5 seconds",
         },
       ],
     },
@@ -76,7 +76,7 @@ export const state = () => ({
         {
           id: uuidv4(),
           details:
-            "I was part of a 2 man frontend team that built this platform. This platform has been in production for over a year, with tens of thousands of dollars processed so far for salary payments. This platform also boasts features sych as reports with excel/pdf downloads, payment integrations, employee onboarding, sub company mamagement for conglomerates. It also provides a salary advance functionality for employees.",
+            "This platform has been in production for over a year, with tens of thousands of dollars processed so far for salary payments, including country staff of international companies such as Meta. This platform also boasts features sych as reports with excel/pdf downloads, payment integrations, employee onboarding, sub company mamagement for conglomerates. It also provides a salary advance functionality for employees.",
         },
       ],
     },
@@ -105,7 +105,7 @@ export const state = () => ({
         {
           id: uuidv4(),
           details:
-            "I was part of a 2 man frontend team that built this platform in 7 weeks. The platform boasts features such as ticket workflows, SLA tracking, support for complex organizational structures such as distributed departments & groups, and dashboards with charts for easy visibility into activiy. Importantly, it also utilizes granular role based access control with the use of role-aware composable function wrappers.",
+            "I was part of a 2 man frontend team that built this platform in 7 weeks. The platform boasts features such as ticket workflows, SLA tracking, support for complex organizational structures such as distributed departments & groups, and dashboards with charts for easy visibility into activiy. Importantly, it also utilizes granular role based access control with the use of role-aware composable function wrappers. A key feature was the strigent security constraints due to the fact that the client was a financial organization. I was able to meet these constraints via deployment of well defined CSP rules.",
         },
         {
           id: uuidv4(),
@@ -199,7 +199,7 @@ export const state = () => ({
     },
     {
       id: uuidv4(),
-      bio: `I'm have very extensive experience with taking projects from ideation stage to production, rapidly. This means I'm able to work with some level of ambiguity & proactiveness.`,
+      bio: `I have very extensive experience with taking projects from ideation stage to production, rapidly. As a result, I am comfortable working with some level of ambiguity & rapid changes, especially for early-stage/greenfield projects and/or startups. On the other hand, I am also adept at maintaining and updating legacy applications more common at more established organizations ensuring applications remain secure and maintainable`,
     },
     {
       id: uuidv4(),
