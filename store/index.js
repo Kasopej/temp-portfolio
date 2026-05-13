@@ -11,7 +11,7 @@ export const state = () => ({
       category: "Web Application",
       img: "/images/investnow.png",
       publishDate: "Nov 04, 2021",
-      tag: "Fullstack",
+      tag: "Frontend",
       objectivesTitle: "Objective",
       objectivesDetails:
         "Redeveloped the flagship investment application, focusing on improving scalability,stability, security & internationalization.",
@@ -124,7 +124,7 @@ export const state = () => ({
       category: "Web Application",
       img: "/images/syncpro.png",
       publishDate: "Nov 04, 2021",
-      tag: "Frontend",
+      tag: "Fullstack",
       objectivesTitle: "Objective",
       objectivesDetails:
         "This workflow management system enables entrprises enhance their workflow & track employee productivity tracking. It allows creation of tasks/tickets from within the app or via email integrations. It allows for collaboration across departments and tracks department/individual SLAs/OLAs for performance monitoring. It currently uses Azure AD for employee access",
