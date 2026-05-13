@@ -2,7 +2,7 @@ import { v4 as uuidv4 } from "uuid";
 
 export const state = () => ({
   projectsHeading: "Projects Portfolio",
-  projectsDescription: "Some of the projects I have successfully completed (only images of landing pages or design thumbnails due to NDA)",
+  projectsDescription: "Some of the projects I have successfully completed (only images of public landing pages or design thumbnails included due to NDA)",
   projects: [
     {
       id: "260d1271-f1f2-4bc9-a5eb-05a89c8cccdb",
