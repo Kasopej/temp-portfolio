@@ -28,9 +28,9 @@ export default {
     </p>
     <div class="flex flex-wrap mt-10 sm:mt-14 gap-2">
       <AboutClientSingle
-        v-for="client in tools"
-        :key="client.id"
-        :client="client"
+        v-for="tool in tools"
+        :key="tool.id"
+        :client="tool"
       />
     </div>
   </div>

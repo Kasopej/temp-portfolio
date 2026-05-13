@@ -43,7 +43,7 @@ export default {
           uppercase
         "
       >
-        Hi, Iam Kasope
+        Hi, I am Kasope
       </h1>
       <p
         class="
@@ -58,7 +58,7 @@ export default {
           text-gray-400
         "
       >
-        A highly technical frontend developer obsessed with every aspect of the
+        A highly technical fullstack developer obsessed with every aspect of the
         web experience
       </p>
       <div class="flex justify-center sm:block">

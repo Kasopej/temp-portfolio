@@ -155,6 +155,11 @@ export const state = () => ({
   tools: [
     {
       id: uuidv4(),
+      title: "Typescript",
+      img: "../tools/typescript.png",
+    },
+    {
+      id: uuidv4(),
       title: "Next",
       img: "../tools/nextjs.jpeg",
     },
@@ -162,6 +167,21 @@ export const state = () => ({
       id: uuidv4(),
       title: "React",
       img: "../tools/react.jpeg",
+    },
+    {
+      id: uuidv4(),
+      title: "NestJs",
+      img: "../tools/nestjs.png",
+    },
+    {
+      id: uuidv4(),
+      title: "Postgres",
+      img: "../tools/postgres.jpg",
+    },
+    {
+      id: uuidv4(),
+      title: "AWS",
+      img: "../tools/aws.png",
     },
     {
       id: uuidv4(),
@@ -180,24 +200,14 @@ export const state = () => ({
     },
     {
       id: uuidv4(),
-      title: "Typescript",
-      img: "../tools/typescript.png",
-    },
-    {
-      id: uuidv4(),
       title: "Stripe",
       img: "../tools/stripe.png",
-    },
-    {
-      id: uuidv4(),
-      title: "Web Sockets",
-      img: "../tools/websockets.png",
     },
   ],
   aboutMe: [
     {
       id: uuidv4(),
-      bio: `Hi, I'm Kasope, a frontend software engineer. 
+      bio: `Hi, I'm Kasope, a fullstack software engineer. 
       I am dedicated to proferring solutions for all sorts of enterprise problems, transforming problem statements to intuitive user experiences.`,
     },
     {
@@ -211,7 +221,7 @@ export const state = () => ({
     },
     {
       id: uuidv4(),
-      bio: "I'm passionate about the whole frontend stack (especially at enterprise scale). I'm always looking for new and exciting projects to work on.",
+      bio: "I'm passionate about building enterprise web solutions. I'm always open to new and exciting projects to work on.",
     },
   ],
   copyrightDate: new Date().getFullYear(),
