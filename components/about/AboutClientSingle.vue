@@ -17,7 +17,6 @@ export default {
       :alt="client.title"
       class="
         h-32
-        aspect-video
         object-cover
         py-5
         px-10
@@ -29,6 +28,7 @@ export default {
         cursor-pointer
         dark:bg-secondary-light
       "
+      :style="{aspectRatio: '16 / 9'}"
     />
   </div>
 </template>
