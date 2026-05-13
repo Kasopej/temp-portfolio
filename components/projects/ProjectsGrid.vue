@@ -42,7 +42,7 @@ export default {
 <template>
   <div class="pt-10 sm:pt-20 md:pt-24">
     <!-- Projects grid header -->
-    <div class="text-center">
+    <div class="text-center space-y-4">
       <p
         class="
           font-general-semibold
@@ -56,10 +56,9 @@ export default {
       >
         {{ projectsHeading }}
       </p>
-      <!-- Note: This description is commented out, but if you want to see it, just uncomment this -->
-      <!-- <p class="text-lg sm:text-xl text-gray-500 dark:text-ternary-light">
+      <p class="text-md sm:text-xl text-gray-500 dark:text-ternary-light">
         {{ projectsDescription }}
-      </p> -->
+      </p>
     </div>
 
     <!-- Filter and search projects -->
