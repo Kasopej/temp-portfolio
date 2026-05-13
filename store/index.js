@@ -2,10 +2,47 @@ import { v4 as uuidv4 } from "uuid";
 
 export const state = () => ({
   projectsHeading: "Projects Portfolio",
-  projectsDescription: "Some of the projects I have successfully completed",
+  projectsDescription: "Some of the projects I have successfully completed (only images of landing pages or design thumbnails due to NDA)",
   projects: [
     {
       id: "260d1271-f1f2-4bc9-a5eb-05a89c8cccdb",
+      title: "Investnow (United Capital)",
+      link: "https://www.investnow.ng",
+      category: "Web Application",
+      img: "images/investnow.png",
+      publishDate: "Nov 04, 2021",
+      tag: "Fullstack",
+      objectivesTitle: "Objective",
+      objectivesDetails:
+        "Redeveloped the flagship investment application, focusing on improving scalability,stability, security & internationalization.",
+      techTitle: "Fintech",
+      socialTitle: "Share This",
+      projectImages: [
+        {
+          id: uuidv4(),
+          title: "Investnow (United Capital)",
+          img: "../images/syncpro.png",
+        },
+      ],
+      technologies: [
+        "Typescript",
+        "NextJs",
+        "Shadcn",
+        "Paystack",
+        "React Hook form",
+        "Tailwind",
+        'Docker'
+      ],
+      projectDetails: [
+        {
+          id: uuidv4(),
+          details:
+            "Streamlined codebase by making use of reusable react patterns, 100% typescript usage & linting to catch bugs very early. This reduced lines of code by 40%, making codebase more manageable, and led to fewer hot fixes by catching regressions early during compilation. Implemented strident security mechanisms against XSS, click-jacking etc as well as ensuring data privacy.",
+        },
+      ],
+    },
+    {
+      id: "261d1271-f1f2-4bc9-a5eb-05a89c8cccdb",
       title: "Goodtalent Hire Talent Management Platform",
       link: "https://hire.goodtalent.io/",
       category: "Web Application",
@@ -15,7 +52,7 @@ export const state = () => ({
       objectivesTitle: "Objective",
       objectivesDetails:
         "This platform helps companies all over the world discover talent. One of the unique value points is the bounty system that encourages users to refer suitable talents for adertised roles",
-      techTitle: "Tools & Technologies",
+      techTitle: "SaaS Solutions",
       socialTitle: "Share This",
       projectImages: [
         {
@@ -43,7 +80,7 @@ export const state = () => ({
       ],
     },
     {
-      id: "260d1271-f1f2-4bc9-a5eb-05a89c8cccdc",
+      id: "262d1271-f1f2-4bc9-a5eb-05a89c8cccdc",
       title: "Goodtalent Paysurge",
       link: "https://paysurge.co/",
       category: "Web Application",
@@ -53,7 +90,7 @@ export const state = () => ({
       objectivesTitle: "Objective",
       objectivesDetails:
         "This platform is concerned with making global payroll operations seamless & compliant with local regulations for companies hiring in Africa. It also features salary advances for employee benefits",
-      techTitle: "Tools & Technologies",
+      techTitle: "SaaS Solutions",
       socialTitle: "Share This",
       projectImages: [
         {
@@ -81,22 +118,22 @@ export const state = () => ({
       ],
     },
     {
-      id: "260d1271-f1f2-4bc9-a5eb-05a89c8cdddc",
-      title: "Support Sync Pro",
-      link: "https://ui-test.syncpro.africa/",
+      id: "263d1271-f1f2-4bc9-a5eb-05a89c8cdddc",
+      title: "SupportSyncpro (Enterprise Workflow & Collaboration Solution)",
+      link: "https://demo.syncpro.africa",
       category: "Web Application",
       img: "images/syncpro.png",
       publishDate: "Nov 04, 2021",
       tag: "Frontend",
       objectivesTitle: "Objective",
       objectivesDetails:
-        "This is an ERP software for helping large B2B & B2C companies enhance their workflow & employee productivity tracking. It is particulaly useful for ticket management flows but can be used for any type of enterprise activity tracking",
-      techTitle: "Tools & Technologies",
+        "This workflow management system enables entrprises enhance their workflow & track employee productivity tracking. It allows creation of tasks/tickets from within the app or via email integrations. It allows for collaboration across departments and tracks department/individual SLAs/OLAs for performance monitoring. It currently uses Azure AD for employee access",
+      techTitle: "Enterprise/SaaS Solutions",
       socialTitle: "Share This",
       projectImages: [
         {
           id: uuidv4(),
-          title: "Support Sync Pro",
+          title: "SupportSyncpro (Enterprise Workflow & Collaboration Solution)",
           img: "../images/syncpro.png",
         },
       ],
@@ -105,40 +142,11 @@ export const state = () => ({
         {
           id: uuidv4(),
           details:
-            "I was part of a 2 man frontend team that built this platform in 7 weeks. The platform boasts features such as ticket workflows, SLA tracking, support for complex organizational structures such as distributed departments & groups, and dashboards with charts for easy visibility into activiy. Importantly, it also utilizes granular role based access control with the use of role-aware composable function wrappers. A key feature was the strigent security constraints due to the fact that the client was a financial organization. I was able to meet these constraints via deployment of well defined CSP rules.",
+            "I was part of a 3 person team that built this fullstack platform in 7 weeks. The platform boasts features such as task workflows, SLA tracking, support for complex organizational structures such as departments & groups, and dashboards with charts for easy visibility into activiy. Beyond the collaboration features, I also implemented a highly granular RBAC (Role Based Access Control) system on the frontend that seamlessly governs what actions a user can trigger via with the use of role-aware composable function wrappers. Althoguh my work was majorly on the frontend, I assisted on the backend, implementing a FileUpload module in nestjs which was integrated with Amazon S3 storage. I also setup strong security constraints/CSP rules for entrprise usage.",
         },
         {
           id: uuidv4(),
-          details: `The development rate was particularly rapid due to customer delivery timelines. However we were able to complete the project while maintaining a high standard of quality and performance.`,
-        },
-      ],
-    },
-    {
-      id: "260d1271-f1f2-4bc9-a5eb-05a89c8cccdy",
-      title: "Teklabspace Bug Bounty Platform",
-      link: "https://www.teklabspace.com/",
-      category: "Web Application",
-      img: "images/teklabspace.png",
-      publishDate: "Nov 04, 2021",
-      tag: "Frontend",
-      objectivesTitle: "Objective",
-      objectivesDetails:
-        "This app aims to impact the cybersecurity ecosystem in Africa by enabling white hackers to partake in bug bounties.",
-      techTitle: "Tools & Technologies",
-      socialTitle: "Share This",
-      projectImages: [
-        {
-          id: uuidv4(),
-          title: "Teklabspace Bug Bounty Platform",
-          img: "../images/teklabspace.png",
-        },
-      ],
-      technologies: ["JavaScript", "React.js"],
-      projectDetails: [
-        {
-          id: uuidv4(),
-          details:
-            "This project was freelance. I was able to push the project close to completion with addition of the necessary screens for adding bug bounties, making submissions, bounty leaderboard and more. Unfortately, severe delays in API development meant the project was not completed while I was contracted.",
+          details: `The development rate was particularly rapid due to customer delivery timelines. However we were able to complete the project while maintaining a high standard of quality and performance. The first version of the app was sold & deployed to a major African financial organization, while it is currently undergoing enhancement ahead of full SaaS launch`,
         },
       ],
     },
