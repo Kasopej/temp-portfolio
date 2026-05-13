@@ -17,7 +17,8 @@ export default {
       :alt="client.title"
       class="
         h-32
-        w-auto
+        w-32
+        object-cover
         py-5
         px-10
         border border-ternary-light

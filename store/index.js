@@ -213,7 +213,7 @@ export const state = () => ({
     {
       id: uuidv4(),
       bio: `I've made fundamental contributions helping businesses generate thousands of Dollars using my skills
-      - Typescript, NextJs, React, VueJs, Nuxt, SCSS, Tailwind, Vite, Vitest, Git etc`,
+      - Typescript, NextJs, React, NestJs, Postgresql, Vue, NuxtJs, SCSS, Tailwind, Vite, Vitest etc`,
     },
     {
       id: uuidv4(),
