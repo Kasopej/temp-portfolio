@@ -17,7 +17,7 @@ export default {
       :alt="client.title"
       class="
         h-32
-        w-32
+        aspect-video
         object-cover
         py-5
         px-10
