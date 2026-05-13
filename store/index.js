@@ -21,7 +21,7 @@ export const state = () => ({
         {
           id: uuidv4(),
           title: "Investnow (United Capital)",
-          img: "../images/syncpro.png",
+          img: "../images/investnow.png",
         },
       ],
       technologies: [
