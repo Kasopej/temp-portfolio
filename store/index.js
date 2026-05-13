@@ -9,7 +9,7 @@ export const state = () => ({
       title: "Investnow (United Capital)",
       link: "https://www.investnow.ng",
       category: "Web Application",
-      img: "images/investnow.png",
+      img: "/images/investnow.png",
       publishDate: "Nov 04, 2021",
       tag: "Fullstack",
       objectivesTitle: "Objective",
@@ -21,7 +21,7 @@ export const state = () => ({
         {
           id: uuidv4(),
           title: "Investnow (United Capital)",
-          img: "../images/investnow.png",
+          img: "/images/investnow.png",
         },
       ],
       technologies: [
@@ -46,7 +46,7 @@ export const state = () => ({
       title: "Goodtalent Hire Talent Management Platform",
       link: "https://hire.goodtalent.io/",
       category: "Web Application",
-      img: "images/hire.png",
+      img: "/images/hire.png",
       publishDate: "Nov 04, 2021",
       tag: "Frontend",
       objectivesTitle: "Objective",
@@ -58,7 +58,7 @@ export const state = () => ({
         {
           id: uuidv4(),
           title: "Goodtalent Hire Talent Management Platform",
-          img: "../images/hire.png",
+          img: "/images/hire.png",
         },
       ],
       technologies: [
@@ -84,7 +84,7 @@ export const state = () => ({
       title: "Goodtalent Paysurge",
       link: "https://paysurge.co/",
       category: "Web Application",
-      img: "images/paysurge.png",
+      img: "/images/paysurge.png",
       publishDate: "Nov 04, 2021",
       tag: "Frontend",
       objectivesTitle: "Objective",
@@ -96,7 +96,7 @@ export const state = () => ({
         {
           id: uuidv4(),
           title: "Goodtalent Paysurge",
-          img: "../images/paysurge.png",
+          img: "/images/paysurge.png",
         },
       ],
       technologies: [
@@ -122,7 +122,7 @@ export const state = () => ({
       title: "SupportSyncpro (Enterprise Workflow & Collaboration Solution)",
       link: "https://demo.syncpro.africa",
       category: "Web Application",
-      img: "images/syncpro.png",
+      img: "/images/syncpro.png",
       publishDate: "Nov 04, 2021",
       tag: "Frontend",
       objectivesTitle: "Objective",
@@ -134,7 +134,7 @@ export const state = () => ({
         {
           id: uuidv4(),
           title: "SupportSyncpro (Enterprise Workflow & Collaboration Solution)",
-          img: "../images/syncpro.png",
+          img: "/images/syncpro.png",
         },
       ],
       technologies: ["Typescript", "Nuxt.js", "DevExtreme"],
@@ -156,52 +156,52 @@ export const state = () => ({
     {
       id: uuidv4(),
       title: "Typescript",
-      img: "../tools/typescript.png",
+      img: "/tools/typescript.png",
     },
     {
       id: uuidv4(),
       title: "Next",
-      img: "../tools/nextjs.jpeg",
+      img: "/tools/nextjs.jpeg",
     },
     {
       id: uuidv4(),
       title: "React",
-      img: "../tools/react.jpeg",
+      img: "/tools/react.jpeg",
     },
     {
       id: uuidv4(),
       title: "NestJs",
-      img: "../tools/nestjs.png",
+      img: "/tools/nestjs.png",
     },
     {
       id: uuidv4(),
       title: "Postgres",
-      img: "../tools/postgres.jpg",
+      img: "/tools/postgres.jpg",
     },
     {
       id: uuidv4(),
       title: "AWS",
-      img: "../tools/aws.png",
+      img: "/tools/aws.png",
     },
     {
       id: uuidv4(),
       title: "Nuxt",
-      img: "../tools/nuxt.jpg",
+      img: "/tools/nuxt.jpg",
     },
     {
       id: uuidv4(),
       title: "Vue",
-      img: "../tools/vue.jpg",
+      img: "/tools/vue.jpg",
     },
     {
       id: uuidv4(),
       title: "Vuetify",
-      img: "../tools/vuetify.jpg",
+      img: "/tools/vuetify.jpg",
     },
     {
       id: uuidv4(),
       title: "Stripe",
-      img: "../tools/stripe.png",
+      img: "/tools/stripe.png",
     },
   ],
   aboutMe: [
