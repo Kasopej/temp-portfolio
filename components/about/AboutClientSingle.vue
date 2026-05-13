@@ -16,7 +16,7 @@ export default {
       :src="client.img"
       :alt="client.title"
       class="
-        h-32
+        h-36
         object-cover
         py-5
         px-10
