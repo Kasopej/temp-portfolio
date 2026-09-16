@@ -2,7 +2,8 @@ import { v4 as uuidv4 } from "uuid";
 
 export const state = () => ({
   projectsHeading: "Projects Portfolio",
-  projectsDescription: "Some of the projects I have successfully completed (only images of public landing pages or design thumbnails included due to NDA)",
+  projectsDescription:
+    "Some of the projects I have successfully completed (only images of public landing pages or public design thumbnails included)",
   projects: [
     {
       id: "260d1271-f1f2-4bc9-a5eb-05a89c8cccdb",
@@ -31,7 +32,7 @@ export const state = () => ({
         "Paystack",
         "React Hook form",
         "Tailwind",
-        'Docker'
+        "Docker",
       ],
       projectDetails: [
         {
@@ -133,7 +134,8 @@ export const state = () => ({
       projectImages: [
         {
           id: uuidv4(),
-          title: "SupportSyncpro (Enterprise Workflow & Collaboration Solution)",
+          title:
+            "SupportSyncpro (Enterprise Workflow & Collaboration Solution)",
           img: "/images/syncpro.png",
         },
       ],
