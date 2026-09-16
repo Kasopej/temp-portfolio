@@ -3,7 +3,7 @@ import { v4 as uuidv4 } from "uuid";
 export const state = () => ({
   projectsHeading: "Projects Portfolio",
   projectsDescription:
-    "Some of the projects I have successfully completed (only images of public landing pages or public design thumbnails included)",
+    "Some of the projects I have successfully completed (only images of public landing pages included - where available).",
   projects: [
     {
       id: "260d1271-f1f2-4bc9-a5eb-05a89c8cccdb",
@@ -47,7 +47,7 @@ export const state = () => ({
       title: "Goodtalent Hire Talent Management Platform",
       link: "https://hire.goodtalent.io/",
       category: "Web Application",
-      img: "/images/hire.png",
+      img: "",
       publishDate: "Nov 04, 2021",
       tag: "Frontend",
       objectivesTitle: "Objective",
@@ -59,7 +59,7 @@ export const state = () => ({
         {
           id: uuidv4(),
           title: "Goodtalent Hire Talent Management Platform",
-          img: "/images/hire.png",
+          img: "",
         },
       ],
       technologies: [
@@ -85,7 +85,7 @@ export const state = () => ({
       title: "Goodtalent Paysurge",
       link: "https://paysurge.co/",
       category: "Web Application",
-      img: "/images/paysurge.png",
+      img: "",
       publishDate: "Nov 04, 2021",
       tag: "Frontend",
       objectivesTitle: "Objective",
@@ -97,7 +97,7 @@ export const state = () => ({
         {
           id: uuidv4(),
           title: "Goodtalent Paysurge",
-          img: "/images/paysurge.png",
+          img: "",
         },
       ],
       technologies: [

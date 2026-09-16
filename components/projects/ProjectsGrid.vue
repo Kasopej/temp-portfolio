@@ -151,9 +151,10 @@ export default {
         "
         aria-label="Single Project"
       >
-        <NuxtLink :to="`/projects/${project.id}`">
+        <NuxtLink :to="`/projects/${project.id}`" class="block min-h-full">
           <div>
             <img
+              v-if="project.img"
               :src="project.img"
               :alt="project.title"
               class="rounded-t-xl border-none"
