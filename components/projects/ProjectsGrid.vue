@@ -56,8 +56,7 @@ export default {
       >
         {{ projectsHeading }}
       </p>
-      <p class="text-md sm:text-xl text-gray-500 dark:text-ternary-light">
-        {{ projectsDescription }}
+      <p class="text-md sm:text-xl text-gray-500 dark:text-ternary-light text-center" v-html="projectsDescription">
       </p>
     </div>
 
@@ -157,7 +156,7 @@ export default {
               v-if="project.img"
               :src="project.img"
               :alt="project.title"
-              class="rounded-t-xl border-none"
+              class="rounded-t-xl border-none w-full h-44 xl:h-80 object-cover"
             />
           </div>
           <div class="text-center px-4 py-6">

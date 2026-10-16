@@ -3,8 +3,87 @@ import { v4 as uuidv4 } from "uuid";
 export const state = () => ({
   projectsHeading: "Projects Portfolio",
   projectsDescription:
-    "Some of the projects I have successfully completed (only images of public landing pages included - where available).",
+    "<span>Some of the projects I have successfully completed</span><br /><span>(only images of public/marketing landing pages used, for illustrative purposes).</span>",
   projects: [
+    {
+      id: "workcms",
+      title:
+        "WorkCMS (Fullstack Content & Work Documentation Platform - personal project)",
+      link: "https://kasope-fullstack-portfolio.vercel.app",
+      category: "Web Application",
+      img: "/images/workcms.png",
+      publishDate: "Oct 16, 2026",
+      tag: "Fullstack",
+      objectivesTitle: "Objective",
+      objectivesDetails:
+        "WorkCMS is a full-stack content management and professional work documentation platform designed to centralize the creation, organization, publishing, and management of technical articles, software projects, and engineering case studies. It provides a structured administrative environment for documenting software architecture, implementation decisions, technical challenges, and project outcomes, supported by role-based access control, secure authentication, and media management.",
+      techTitle: "Fullstack CMS / SaaS Architecture",
+      socialTitle: "Share This",
+      projectImages: [
+        {
+          id: uuidv4(),
+          title: "WorkCMS - Content Management Platform",
+          img: "/images/workcms.png",
+        },
+      ],
+      technologies: [
+        "TypeScript",
+        "Next.js",
+        "React",
+        "NestJS",
+        "Node.js",
+        "PostgreSQL",
+        "TypeORM",
+        "Supabase Auth",
+        "Supabase Storage",
+        "RBAC",
+        "REST API",
+        "AWS S3 SDK",
+        "Tailwind CSS",
+      ],
+      projectDetails: [
+        {
+          id: uuidv4(),
+          details:
+            "I designed and developed WorkCMS as a full-stack application using Next.js for the frontend and NestJS for the backend, following a modular architecture with a clear separation between the presentation, business logic, authentication, and persistence layers. The backend exposes RESTful APIs organized around domain-specific modules for projects, technical articles, skills, users, permissions, file uploads, and analytics. This architecture makes the application easier to maintain, extend, and deploy independently across frontend and backend environments.",
+        },
+        {
+          id: uuidv4(),
+          details:
+            "For the frontend, I iterated on the design using an AI design creation tool to create the figma prototypes & themes. These designs were used to closely guide the development of the frontend platform to ensure a high quality and user-friendly interface. The frontend was built using Next.js. The UI architecture is component based and fully themable, using Shadcn, TailwindCSS and CSS variables.",
+        },
+        {
+          id: uuidv4(),
+          details:
+            "For authentication and identity management, I integrated Supabase Auth with the NestJS backend, implementing a custom Supabase authentication guard to validate authenticated requests and resolve the active user. I adopted a hybrid identity architecture in which Supabase manages authentication identities while the Supabase PostgreSQL schema maintains user profiles, roles, and domain relationships. This allows the application to benefit from managed authentication while retaining full control over its authorization model and relational data. I also implemented custom parameter decorators for accessing authenticated user information within protected controllers.",
+        },
+        {
+          id: uuidv4(),
+          details:
+            "I designed a granular Role-Based Access Control (RBAC) model using TypeORM entities and relational mappings. The authorization architecture includes User, Role, and Permission entities, with users associated with roles and roles mapped to multiple permissions through a dedicated join table. The system supports administrative and guest roles, providing a foundation for controlling access to CMS operations such as content creation, modification, publishing, and administrative management. Authorization responsibilities are separated from authentication, allowing access policies to evolve independently of the underlying identity provider.",
+        },
+        {
+          id: uuidv4(),
+          details:
+            "The persistence layer is built on PostgreSQL with TypeORM handling entity mapping, relational queries, and schema migrations. I modeled relationships between projects, skills, users, roles, and permissions, including many-to-many associations for project technologies and role permissions. The content model supports project documentation, publication states, and structured technical metadata. I also configured TypeORM migrations to manage schema evolution explicitly rather than relying on automatic schema synchronization in production, using compiled migration artifacts as part of the deployment workflow.",
+        },
+        {
+          id: uuidv4(),
+          details:
+            "For media management, I developed a dedicated NestJS upload module integrated with Supabase Storage. The module handles file validation, upload size restrictions, unique file identification, organized storage paths, and deletion operations. The storage integration uses server-side credentials to manage objects while keeping privileged operations away from the browser. This provides a reusable media management foundation for project screenshots, article illustrations, and other CMS assets, with the architecture supporting further improvements to file ownership and access control.",
+        },
+        {
+          id: uuidv4(),
+          details:
+            "I also developed an analytics module within the NestJS backend, exposing endpoints for historical session activity and device-type statistics. This provides a foundation for understanding audience engagement and content consumption. The analytics capabilities are separated into their own application module, keeping reporting concerns independent of the core CMS domain logic.",
+        },
+        {
+          id: uuidv4(),
+          details:
+            "From an infrastructure perspective, I designed WorkCMS for independently deployable frontend and backend services within a monorepo for centralized source control. The frontend is auto-deployed on Vercel, while the API is auto-deployed on Railway.",
+        },
+      ],
+    },
     {
       id: "260d1271-f1f2-4bc9-a5eb-05a89c8cccdb",
       title: "Investnow (United Capital)",
@@ -15,7 +94,7 @@ export const state = () => ({
       tag: "Frontend",
       objectivesTitle: "Objective",
       objectivesDetails:
-        "Redeveloped the flagship investment application, focusing on improving scalability,stability, security & internationalization.",
+        "Rebuilt the flagship retail investment web application, used by over 10,000 users daily (during peak periods) to manage their investment portfolios. This rebuild focused on improving scalability, stability, security & internationalization.",
       techTitle: "Fintech",
       socialTitle: "Share This",
       projectImages: [
@@ -38,7 +117,22 @@ export const state = () => ({
         {
           id: uuidv4(),
           details:
-            "Streamlined codebase by making use of reusable react patterns, 100% typescript usage & linting to catch bugs very early. This reduced lines of code by 40%, making codebase more manageable, and led to fewer hot fixes by catching regressions early during compilation. Implemented strident security mechanisms against XSS, click-jacking etc as well as ensuring data privacy.",
+            "Rewrote codebase using reusable & modular react patterns, reducing lines of code by 40%. Added close to 100% type safety, automated testing & extensive linting. These changes improved user accessibility, code readability at scale, and drastically reduced regressions",
+        },
+        {
+          id: uuidv4(),
+          details:
+            "Above work provided the foundation for unprecedented scaling of the application, with usage increasing at a rapid rate (>200% over 6 months) along with constantly evolving business requirements",
+        },
+        {
+          id: uuidv4(),
+          details:
+            "Built a revamped IPO module in 2 weeks that successfully processed transactions worth Billions of Naira in 6 weeks with zero downtime",
+        },
+        {
+          id: uuidv4(),
+          details:
+            "Integrated error reporting & session tracking tools for quick visibility into user issues & painpoints, as well as user analytics. Also built in security mechanisms against security vulnerabilities, such as XSS, click-jacking etc.",
         },
       ],
     },
@@ -47,7 +141,7 @@ export const state = () => ({
       title: "Goodtalent Hire Talent Management Platform",
       link: "https://hire.goodtalent.io/",
       category: "Web Application",
-      img: "",
+      img: "/images/goodtalent.png",
       publishDate: "Nov 04, 2021",
       tag: "Frontend",
       objectivesTitle: "Objective",
@@ -59,7 +153,7 @@ export const state = () => ({
         {
           id: uuidv4(),
           title: "Goodtalent Hire Talent Management Platform",
-          img: "",
+          img: "/images/goodtalent.png",
         },
       ],
       technologies: [
@@ -85,7 +179,7 @@ export const state = () => ({
       title: "Goodtalent Paysurge",
       link: "https://paysurge.co/",
       category: "Web Application",
-      img: "",
+      img: "/images/goodtalent.png",
       publishDate: "Nov 04, 2021",
       tag: "Frontend",
       objectivesTitle: "Objective",
@@ -97,7 +191,7 @@ export const state = () => ({
         {
           id: uuidv4(),
           title: "Goodtalent Paysurge",
-          img: "",
+          img: "/images/goodtalent.png",
         },
       ],
       technologies: [
