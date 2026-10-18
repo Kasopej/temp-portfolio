@@ -43,7 +43,7 @@ export default {
           uppercase
         "
       >
-        Hi, I am Kasope
+        Welcome, meet Kasope
       </h1>
       <p
         class="
@@ -58,8 +58,7 @@ export default {
           text-gray-400
         "
       >
-        A highly technical fullstack developer obsessed with every aspect of the
-        web experience
+        A fullstack developer & leader building applications that have unlocked billions of naira for enterprises & startups
       </p>
       <div class="flex justify-center sm:block">
         <a
@@ -102,13 +101,14 @@ export default {
     </div>
 
     <!-- Banner right illustration -->
-    <div class="w-full md:w-2/3 text-right float-right">
+    <div class="w-full md:w-2/3 text-right flex flex-col" style="max-height: 700px;">
       <img
         v-if="this.$colorMode.value == 'dark'"
         src="~/static/developer-dark.svg"
+        class="object-cover h-full flex-shrink"
         alt="Developer Dark"
       />
-      <img v-else src="~/static/developer.svg" alt="Developer Light" />
+      <img v-else src="~/static/developer.svg" class="object-cover h-full min-h-0 flex-shrink" alt="Developer Light"/>
     </div>
   </section>
 </template>

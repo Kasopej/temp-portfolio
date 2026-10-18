@@ -1,14 +1,23 @@
 import { v4 as uuidv4 } from "uuid";
 // @ts-expect-error raw-loader
 import tsLogo from "!!raw-loader!../static/tools/ts_logo.svg";
+// @ts-expect-error raw-loader
 import nextLogo from "!!raw-loader!../static/tools/nextjs.svg";
+// @ts-expect-error raw-loader
 import reactLogo from "!!raw-loader!../static/tools/react.svg";
+// @ts-expect-error raw-loader
 import nestLogo from "!!raw-loader!../static/tools/nestjs.svg";
+// @ts-expect-error raw-loader
 import postgresLogo from "!!raw-loader!../static/tools/postgres.svg";
+// @ts-expect-error raw-loader
 import awsLogo from "!!raw-loader!../static/tools/aws.svg";
+// @ts-expect-error raw-loader
 import nuxtLogo from "!!raw-loader!../static/tools/nuxtjs.svg";
+// @ts-expect-error raw-loader
 import vueLogo from "!!raw-loader!../static/tools/vue.svg";
+// @ts-expect-error raw-loader
 import vuetifyLogo from "!!raw-loader!../static/tools/vuetify.svg";
+// @ts-expect-error raw-loader
 import stripeLogo from "!!raw-loader!../static/tools/stripe.svg";
 
 export const state = () => ({
