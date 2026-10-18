@@ -304,20 +304,19 @@ export const state = () => ({
     {
       id: uuidv4(),
       bio: `Hi, I'm Kasope, a fullstack software engineer. 
-      I am dedicated to proferring solutions for all sorts of enterprise problems, transforming problem statements to intuitive user experiences.`,
+      I am highly experienced in building robust & resilient solutions for enterprise scale, across fintech, payroll/recruitment, ERP & energy domains. I am a key contributor in system design decisions, where I work with cross-functional teams to transform complex problem statements into scalable digital platforms.`,
     },
     {
       id: uuidv4(),
-      bio: `I've made fundamental contributions helping businesses generate thousands of Dollars using my skills
-      - Typescript, NextJs, React, NestJs, Postgresql, Vue, NuxtJs, SCSS, Tailwind, Vite, Vitest etc`,
+      bio: `I have a proven track record as a senior developer, developing fintech applications that have reliably processed <span style="text-decoration: underline">billions of naira in transaction value</span>, and collaborative, data-intensive applications that have unlocked value by streamlining operations for large enterprise teams.`,
     },
     {
       id: uuidv4(),
-      bio: `I have very extensive experience with taking projects from ideation stage to production, rapidly. As a result, I am comfortable working with some level of ambiguity & rapid changes, especially for early-stage/greenfield projects and/or startups. On the other hand, I am also adept at maintaining and updating legacy applications more common at more established organizations ensuring applications remain secure and maintainable`,
+      bio: `I demonstrate strong leadership skills, providing experienced UX & technical insight to refine product design decisions, effectively managing stakeholders, setting coding standards for security, reliability & team velocity.`,
     },
     {
       id: uuidv4(),
-      bio: "I'm passionate about building enterprise web solutions. I'm always open to new and exciting projects to work on.",
+      bio: `I have extensive experience with taking projects from ideation stage to production, rapidly. As a result, I am comfortable working with some level of ambiguity & rapid changes, especially for early-stage/greenfield projects and startups. On the other hand, I am also adept at managing and reinforcing legacy systems, ensuring applications remain secure and maintainable`,
     },
   ],
   copyrightDate: new Date().getFullYear(),

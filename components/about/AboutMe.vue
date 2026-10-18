@@ -32,8 +32,8 @@ export default {
           dark:text-ternary-light
           text-lg
         "
+        v-html="bio.bio"
       >
-        {{ bio.bio }}
       </p>
     </div>
   </div>
