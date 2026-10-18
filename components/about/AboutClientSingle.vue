@@ -11,26 +11,21 @@ export default {
 
 <template>
   <!-- About single client -->
-  <div>
-    <img
-      :src="client.img"
-      :alt="client.title"
+  <div class="w-20 inline-flex justify-center items-center shadow-sm rounded-full overflow-hidden cursor-pointer text-primary-dark dark:text-primary-light">
+    <div
+      v-html="client.img"
+      role="img"
+      :aria-label="client.title"
       class="
-        h-36
-        object-cover
-        py-5
-        px-10
-        border border-ternary-light
-        dark:border-ternary-dark
-        shadow-sm
-        rounded-lg
-        mb-8
-        cursor-pointer
-        dark:bg-secondary-light
+        w-20 max-w-none object-cover
       "
-      :style="{aspectRatio: '16 / 9'}"
     />
   </div>
 </template>
 
-<style lang="scss" scoped></style>
+<style scoped>
+::v-deep svg {
+  width: 100%;
+  height: auto;
+}
+</style>

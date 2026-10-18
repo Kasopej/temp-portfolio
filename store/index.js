@@ -1,4 +1,15 @@
 import { v4 as uuidv4 } from "uuid";
+// @ts-expect-error raw-loader
+import tsLogo from "!!raw-loader!../static/tools/ts_logo.svg";
+import nextLogo from "!!raw-loader!../static/tools/nextjs.svg";
+import reactLogo from "!!raw-loader!../static/tools/react.svg";
+import nestLogo from "!!raw-loader!../static/tools/nestjs.svg";
+import postgresLogo from "!!raw-loader!../static/tools/postgres.svg";
+import awsLogo from "!!raw-loader!../static/tools/aws.svg";
+import nuxtLogo from "!!raw-loader!../static/tools/nuxtjs.svg";
+import vueLogo from "!!raw-loader!../static/tools/vue.svg";
+import vuetifyLogo from "!!raw-loader!../static/tools/vuetify.svg";
+import stripeLogo from "!!raw-loader!../static/tools/stripe.svg";
 
 export const state = () => ({
   projectsHeading: "Projects Portfolio",
@@ -252,52 +263,52 @@ export const state = () => ({
     {
       id: uuidv4(),
       title: "Typescript",
-      img: "/tools/typescript.png",
+      img: tsLogo,
     },
     {
       id: uuidv4(),
       title: "Next",
-      img: "/tools/nextjs.jpeg",
+      img: nextLogo,
     },
     {
       id: uuidv4(),
       title: "React",
-      img: "/tools/react.jpeg",
+      img: reactLogo,
     },
     {
       id: uuidv4(),
       title: "NestJs",
-      img: "/tools/nestjs.png",
+      img: nestLogo,
     },
     {
       id: uuidv4(),
       title: "Postgres",
-      img: "/tools/postgres.jpg",
+      img: postgresLogo,
     },
     {
       id: uuidv4(),
       title: "AWS",
-      img: "/tools/aws.png",
+      img: awsLogo,
     },
     {
       id: uuidv4(),
       title: "Nuxt",
-      img: "/tools/nuxt.jpg",
+      img: nuxtLogo,
     },
     {
       id: uuidv4(),
       title: "Vue",
-      img: "/tools/vue.jpg",
+      img: vueLogo,
     },
     {
       id: uuidv4(),
       title: "Vuetify",
-      img: "/tools/vuetify.jpg",
+      img: vuetifyLogo,
     },
     {
       id: uuidv4(),
       title: "Stripe",
-      img: "/tools/stripe.png",
+      img: stripeLogo,
     },
   ],
   aboutMe: [

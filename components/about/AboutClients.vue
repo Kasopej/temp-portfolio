@@ -26,7 +26,7 @@ export default {
     >
       {{ toolsHeading }}
     </p>
-    <div class="flex flex-wrap mt-10 sm:mt-14 gap-2">
+    <div class="w-full flex flex-wrap justify-center mt-10 sm:mt-14 gap-2">
       <AboutClientSingle
         v-for="tool in tools"
         :key="tool.id"
