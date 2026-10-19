@@ -104,11 +104,12 @@ export default {
     <div class="w-full md:w-2/3 text-right flex flex-col" style="max-height: 700px;">
       <img
         v-if="this.$colorMode.value == 'dark'"
-        src="~/static/developer-dark.svg"
+        src="/developer-dark.svg"
         class="object-cover h-full flex-shrink"
         alt="Developer Dark"
+        fetchpriority="high"
       />
-      <img v-else src="~/static/developer.svg" class="object-cover h-full min-h-0 flex-shrink" alt="Developer Light"/>
+      <img v-else src="/developer.svg" class="object-cover h-full min-h-0 flex-shrink" alt="Developer Light" fetchpriority="high"/>
     </div>
   </section>
 </template>
