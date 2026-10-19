@@ -38,7 +38,21 @@ export default {
         content: "summary_large_image",
       },
     ],
-    link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.png" }],
+    link: [
+      { rel: "icon", type: "image/x-icon", href: "/favicon.png" },
+      {
+        rel: "preload",
+        as: "image",
+        type: "image/svg+xml",
+        href: "/developer-dark.svg",
+      },
+      {
+        rel: "preload",
+        as: "image",
+        type: "image/svg+xml",
+        href: "/developer.svg",
+      },
+    ],
   },
 
   css: ["~/assets/app.css"],
