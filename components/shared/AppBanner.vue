@@ -62,7 +62,7 @@ export default {
       </p>
       <div class="flex justify-center sm:block">
         <a
-          href="https://drive.google.com/file/d/11s72bQlB-R549aix5_uK3avYL9ip679F/view?usp=sharing"
+          href="https://drive.google.com/file/d/11s72bQlB-R549aix5_uK3avYL9ip679F/preview"
           target="_blank"
           download=""
           class="
