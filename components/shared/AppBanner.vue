@@ -108,8 +108,9 @@ export default {
         class="object-cover h-full flex-shrink"
         alt="Developer Dark"
         fetchpriority="high"
+        loading="eager"
       />
-      <img v-else src="/developer.svg" class="object-cover h-full min-h-0 flex-shrink" alt="Developer Light" fetchpriority="high"/>
+      <img v-else src="/developer.svg" class="object-cover h-full min-h-0 flex-shrink" alt="Developer Light" fetchpriority="high" loading="eager"/>
     </div>
   </section>
 </template>

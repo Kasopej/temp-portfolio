@@ -41,7 +41,7 @@ export default {
         </ul>
       </div>
     </div>
-    <ProjectsGrid />
+    <ProjectsGrid lazy/>
 
     <!-- View more projects button -->
     <div class="mt-5 sm:mt-14 flex justify-center">

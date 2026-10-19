@@ -3,6 +3,12 @@ import { mapState } from "vuex";
 import feather from "feather-icons";
 
 export default {
+  props: {
+    lazy: {
+      type: Boolean,
+      default: false,
+    }
+  },
   data: () => {
     return {
       selectedProject: "",
@@ -157,6 +163,7 @@ export default {
               :src="project.img"
               :alt="project.title"
               class="rounded-t-xl border-none w-full h-44 xl:h-80 object-cover"
+              :loading="$props.lazy ? 'lazy' : undefined"
             />
           </div>
           <div class="text-center px-4 py-6">
