@@ -37,6 +37,8 @@ export default {
         <transition name="fade-up-down">
           <div v-show="modal" class="modal-wrapper flex items-center z-30">
             <div
+              role="dialog"
+              aria-labelledby="hire-me-title"
               class="
                 modal
                 max-w-md
@@ -64,14 +66,17 @@ export default {
                   dark:border-ternary-dark
                 "
               >
-                <h5 class="text-primary-dark dark:text-primary-light text-xl">
+                <h5 id="hire-me-title" class="text-primary-dark dark:text-primary-light text-xl">
                   What project are you looking for?
                 </h5>
                 <button
+                  type="button"
+                  aria-label="Close Hire Me dialog"
+                  title="Close"
                   class="px-4 text-primary-dark dark:text-primary-light"
                   @click="showModal()"
                 >
-                  <i data-feather="x" class="w-8 sm:w-12"></i>
+                  <i aria-hidden="true" data-feather="x" class="w-8 sm:w-12"></i>
                 </button>
               </div>
               <div class="modal-body p-5 w-full h-full">
@@ -98,8 +103,9 @@ export default {
                         text-primary-dark
                         dark:text-ternary-light
                       "
-                      id="name"
+                      id="hire-name"
                       name="name"
+                      autocomplete="name"
                       type="text"
                       required=""
                       placeholder="Name"
@@ -121,9 +127,10 @@ export default {
                         text-primary-dark
                         dark:text-ternary-light
                       "
-                      id="email"
+                      id="hire-email"
                       name="email"
-                      type="text"
+                      type="email"
+                      autocomplete="email"
                       required=""
                       placeholder="Email"
                       aria-label="Email"
@@ -144,7 +151,7 @@ export default {
                         text-primary-dark
                         dark:text-ternary-light
                       "
-                      id="subject"
+                      id="hire-subject"
                       name="subject"
                       type="text"
                       required=""
@@ -175,7 +182,7 @@ export default {
                         text-primary-dark
                         dark:text-ternary-light
                       "
-                      id="message"
+                      id="hire-message"
                       name="message"
                       cols="14"
                       rows="6"

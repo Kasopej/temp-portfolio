@@ -16,6 +16,7 @@ export default {
       v-html="client.img"
       role="img"
       :aria-label="client.title"
+      :title="client.title"
       class="
         w-20 max-w-none object-cover
       "

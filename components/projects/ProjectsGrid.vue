@@ -105,6 +105,7 @@ export default {
             "
           >
             <i
+              aria-hidden="true"
               data-feather="search"
               class="text-ternary-dark dark:text-ternary-light"
             ></i>
@@ -127,12 +128,12 @@ export default {
               text-primary-dark
               dark:text-ternary-light
             "
-            id="name"
-            name="name"
+            id="search"
+            name="search"
             type="search"
             required=""
             placeholder="Search Projects"
-            aria-label="Name"
+            aria-label="Search Projects"
           />
         </div>
         <ProjectsFilter @change="selectedProject = $event" />
@@ -154,9 +155,8 @@ export default {
           bg-secondary-light
           dark:bg-ternary-dark
         "
-        aria-label="Single Project"
       >
-        <NuxtLink :to="`/projects/${project.id}`" class="block min-h-full">
+        <NuxtLink :to="`/projects/${project.id}`" :title="project.title" class="block min-h-full">
           <div>
             <img
               v-if="project.img"

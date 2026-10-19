@@ -15,6 +15,7 @@ export default {
 
 <template>
   <select
+    aria-label="Filter projects by category"
     @change="$emit('change', $event.target.value)"
     :name="select"
     :id="select"

@@ -1,11 +1,10 @@
 <script>
 import { mapState } from "vuex";
-import HireMeModal from "../HireMeModal.vue";
 import AppNavigation from "./AppNavigation.vue";
+// import HireMeModal from "../HireMeModal.vue";
 
 export default {
   components: {
-    HireMeModal,
     AppNavigation,
   },
   data: () => {
@@ -42,7 +41,7 @@ export default {
 </script>
 
 <template>
-  <nav id="nav" class="sm:container sm:mx-auto">
+  <nav id="nav" aria-label="Main navigation" class="sm:container sm:mx-auto">
     <!-- Header -->
     <div
       class="
@@ -58,7 +57,7 @@ export default {
       <div class="flex justify-between items-center px-6 sm:px-0">
         <!-- Header logos -->
         <div>
-          <NuxtLink to="/">
+          <NuxtLink to="/" aria-label="Kasope's portfolio home" title="Home">
             <img
               v-if="this.$colorMode.value == 'dark'"
               src="~/static/logo-light.svg"
@@ -78,6 +77,9 @@ export default {
         <!-- Theme switcher small screen -->
         <button
           @click="themeSwitcher"
+          type="button"
+          :aria-label="$colorMode.value == 'light' ? 'Switch to dark mode' : 'Switch to light mode'"
+          :title="$colorMode.value == 'light' ? 'Switch to dark mode' : 'Switch to light mode'"
           class="
             sm:hidden
             ml-8
@@ -93,6 +95,8 @@ export default {
         >
           <!-- Dark mode icon -->
           <svg
+            aria-hidden="true"
+            focusable="false"
             v-if="$colorMode.value == 'light'"
             xmlns="http://www.w3.org/2000/svg"
             class="
@@ -116,6 +120,8 @@ export default {
           </svg>
           <!-- Light mode icon -->
           <svg
+            aria-hidden="true"
+            focusable="false"
             v-else
             xmlns="http://www.w3.org/2000/svg"
             class="text-gray-200 hover:text-gray-50 w-6 h-6"
@@ -138,9 +144,13 @@ export default {
             @click="isOpen = !isOpen"
             type="button"
             class="focus:outline-none"
-            aria-label="Hamburger Menu"
+            :aria-label="isOpen ? 'Close navigation menu' : 'Open navigation menu'"
+            :aria-expanded="String(isOpen)"
+            aria-controls="navigation-links"
           >
             <svg
+              aria-hidden="true"
+              focusable="false"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
               class="
@@ -183,6 +193,9 @@ export default {
         <!-- Theme switcher large screen -->
         <button
           @click="themeSwitcher"
+          type="button"
+          :aria-label="$colorMode.value == 'light' ? 'Switch to dark mode' : 'Switch to light mode'"
+          :title="$colorMode.value == 'light' ? 'Switch to dark mode' : 'Switch to light mode'"
           class="
             sm:ml-6
             bg-primary-light
@@ -196,6 +209,8 @@ export default {
         >
           <!-- Dark mode icon -->
           <svg
+            aria-hidden="true"
+            focusable="false"
             v-if="$colorMode.value == 'light'"
             xmlns="http://www.w3.org/2000/svg"
             class="
@@ -219,6 +234,8 @@ export default {
           </svg>
           <!-- Light mode icon -->
           <svg
+            aria-hidden="true"
+            focusable="false"
             v-else
             xmlns="http://www.w3.org/2000/svg"
             class="text-gray-200 hover:text-gray-50 w-6 h-6"

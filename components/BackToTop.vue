@@ -40,7 +40,10 @@ export default {
 <template>
   <!-- Scroll to top -->
   <transition name="fade">
-    <div
+    <button
+      type="button"
+      aria-label="Back to top"
+      title="Back to top"
       v-show="isScrolled"
       class="
         transition
@@ -62,8 +65,8 @@ export default {
       "
       @click="backToTop"
     >
-      <i data-feather="chevron-up"></i>
-    </div>
+      <i aria-hidden="true" data-feather="chevron-up"></i>
+    </button>
   </transition>
 </template>
 

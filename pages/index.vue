@@ -1,10 +1,9 @@
 <script>
 import { mapState } from "vuex";
 import AppBanner from "../components/shared/AppBanner.vue";
-import Button from "../components/reusable/Button.vue";
 export default {
   scrollToTop: true,
-  components: { AppBanner, Button },
+  components: { AppBanner },
   computed: {
     ...mapState(["tools"]),
     toolImages() {
@@ -65,7 +64,7 @@ export default {
         "
         aria-label="More Projects"
       >
-        <Button title="More Projects" />
+        <span>More Projects</span>
       </NuxtLink>
     </div>
   </div>

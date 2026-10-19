@@ -27,6 +27,7 @@ export default {
       <ul class="font-general-regular">
         <li class="flex" v-for="contact in contacts" :key="contact.id">
           <i
+            aria-hidden="true"
             :data-feather="contact.icon"
             class="w-5 text-gray-500 dark:text-gray-400 mr-4"
           ></i>

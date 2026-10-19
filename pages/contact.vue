@@ -17,12 +17,12 @@ export default {
           link: "mailto:kasopej@gmailcom",
           icon: "mail",
         },
-        {
-          id: 3,
-          name: "+234 902 964 6160",
-          link: "tel:+234 902 964 6160",
-          icon: "phone",
-        },
+        // {
+        //   id: 3,
+        //   name: "+234 902 964 6160",
+        //   link: "tel:+234 902 964 6160",
+        //   icon: "phone",
+        // },
       ],
     };
   },

@@ -90,6 +90,7 @@ export default {
           aria-label="Download Resume"
         >
           <i
+            aria-hidden="true"
             data-feather="arrow-down-circle"
             class="ml-0 sm:ml-1 mr-2 sm:mr-3 w-5 sm:w-6 duration-100"
           ></i>

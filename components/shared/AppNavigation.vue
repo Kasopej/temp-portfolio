@@ -7,6 +7,7 @@ export default {
 <template>
   <!-- App header navigation links -->
   <div
+    id="navigation-links"
     :class="isOpen ? 'block' : 'hidden'"
     class="
       font-general-regular
@@ -89,8 +90,7 @@ export default {
     >
       <button
         class="
-          sm:hidden
-          block
+          hidden
           text-left text-md
           bg-indigo-500
           hover:bg-indigo-600

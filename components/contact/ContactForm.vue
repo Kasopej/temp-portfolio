@@ -69,10 +69,10 @@ export default {
             "
             id="name"
             name="name"
+            autocomplete="name"
             type="text"
             required=""
             placeholder="Your Name"
-            aria-label="Name"
           />
         </div>
         <div class="mt-6">
@@ -99,7 +99,8 @@ export default {
             "
             id="email"
             name="email"
-            type="text"
+            type="email"
+            autocomplete="email"
             required=""
             placeholder="Your Email"
             aria-label="Email"

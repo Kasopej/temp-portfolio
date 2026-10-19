@@ -47,6 +47,7 @@ export default {
         <div class="flex gap-4">
           <div class="flex items-center">
             <i
+              aria-hidden="true"
               data-feather="tag"
               class="w-4 h-4 text-ternary-dark dark:text-ternary-light"
             ></i>
@@ -63,6 +64,7 @@ export default {
           </div>
           <div class="flex items-center">
             <i
+              aria-hidden="true"
               data-feather="link"
               class="w-4 h-4 text-ternary-dark dark:text-ternary-light"
             ></i>
@@ -75,6 +77,7 @@ export default {
                 dark:text-primary-light
               "
               :href="project.link"
+              :title="project.title"
               target="_blank"
               >{{ project.link }}</a
             >
@@ -91,6 +94,8 @@ export default {
         >
           <img
             :src="projectImage.img"
+            :alt="projectImage.title"
+            :title="projectImage.title"
             class="rounded-xl cursor-pointer shadow-lg sm:shadow-none"
           />
         </div>
